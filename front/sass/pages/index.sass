@@ -50,6 +50,15 @@ body
     font-size: 20px
     width: 308px
     z-index: 1
+  &__bg2
+    z-index: -1
+    margin-top: 135px
+    // border: 1px solid white
+    height: 1240px
+    width: 100%
+    position: absolute
+    background: url('../img/bg2-desk.png') no-repeat 60% 0/cover
+
 
 .hero
   position: relative
@@ -94,3 +103,70 @@ body
     height: 192px
     bottom: 0
     background: linear-gradient(180deg, rgba(0, 0, 61, 0.00) 0%, #00003D 100%)
+.section
+  &__title
+    color: $color-white
+    // text-align: center
+    text-shadow: 3px 0px 0px #FF267E
+    font-family: $font-alumni-sans-bold
+    font-size: 90px
+    line-height: 70px
+    text-transform: uppercase
+
+// ABOUT
+.about
+  height: 658px
+  padding-top: 59px
+  &__container
+    max-width: 1240px
+    margin: 0 auto
+    border: 1px dashed red
+    display: flex
+    justify-content: end
+    position: relative
+    &::before
+      content: ''
+      background-image: url('../img/about-before-desk.png')
+      background-size: cover
+      width: 208px
+      height: 208px
+      position: absolute
+      right: -208px
+      top: 0
+  &__title
+    margin-bottom: 75px
+
+  &__man
+    max-height: 658px
+    position: absolute
+    left: -270px
+  &__list
+    width: 570px
+    height: 514px
+    background-color: #ffffff6b
+  &__items
+    display: flex
+    flex-direction: column
+    gap: 32px
+  &__item
+    display: flex
+    align-items: center
+    gap: 12px
+    font-family: $font-alumni-sans-medium
+    font-size: 26px
+    color: $color-white
+    &::before
+      content: ''
+      width: 51px
+      height: 46px
+      background-image: url('../img/check.svg')
+
+
+
+
+//SERVICE
+.service
+  &__container
+    max-width: 1240px
+    margin: 0 auto
+    border: 1px dashed red
