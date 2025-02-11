@@ -1,0 +1,96 @@
+
+
+$font-suisse-intl-semibold: SuisseIntl-SemiBold, sans-serif//600
+$font-alumni-sans-bold: Alumni Sans Bold, sans-serif//700
+$font-alumni-sans-medium: Alumni Sans Medium, sans-serif//500
+$font-alumni-sans-regular: Alumni Sans Regular, sans-serif//400
+
+// $color-orange: #FCC054
+// $color-violet: #4E0154
+$color-blue: #005
+$color-white: #FFF
+$color-pink: #FF267E
+$color-green: #05C48A
+
+// $oval-shadow-color: #07080D
+
+body
+  background-color: #000055
+  // overscroll-behavior: none
+  // font-family: $font-roadRadio-black
+  font-family: $font-alumni-sans-regular
+  img
+    max-width: 100%
+    height: auto
+
+.page
+
+  &__hero
+    height: 551px
+    border: 1px dashed $color-white
+    background: url('../img/bg-hero-desk.png') no-repeat 60% 0/cover
+    // @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
+    //   background: url('../img/bg-desk.jpg') no-repeat 60% 0/cover 
+    // @media screen and (min-width: 601px) and (max-width: 1300px) and (orientation: portrait)
+    //   background: url('../img/bg-tab.jpg') no-repeat 50% 0/cover 
+    // @media screen and (max-width: 600px) and (orientation: portrait)
+    //   background: url("../img/bg-mob.jpg") no-repeat 50% 0%/cover
+    // @media (max-width: 950px) and (max-height: 700px) and (orientation: landscape)
+    //   background: url("../img/bg-landscape.jpg") no-repeat 100% 100%/cover
+  &__btn
+    padding: 18px 20px
+    border-radius: 4px
+    background-color: $color-green
+    border: none 
+    color: $color-blue
+    font-family: $font-suisse-intl-semibold
+    line-height: 26px
+    letter-spacing: 1.6px
+    text-transform: uppercase
+    font-size: 20px
+    width: 308px
+    z-index: 1
+
+.hero
+  position: relative
+  &__container
+    max-width: 1240px
+    border: 1px dashed red
+    margin: 0 auto
+    height: 100%
+    display: flex
+    justify-content: space-between
+  &__left
+    padding-left: 44px
+    display: flex
+    justify-content: center
+    flex-direction: column
+  &__right
+    padding-top: 28px
+    width: 507px
+    display: flex
+    align-items: end
+  &__title
+    margin-bottom: 28px
+    font-family: $font-alumni-sans-bold
+    color: $color-white
+    font-size: 90px
+    line-height: 70px
+    text-transform: uppercase
+    span
+      color: $color-pink
+  &__subtitle
+    margin-bottom: 58px
+    font-family: $font-alumni-sans-regular
+    font-size: 24px
+    color: $color-white
+  &__terminals
+    // width: 100%
+    // width: 507px
+    // height: 100%
+  &__shadow
+    position: absolute
+    width: 100%
+    height: 192px
+    bottom: 0
+    background: linear-gradient(180deg, rgba(0, 0, 61, 0.00) 0%, #00003D 100%)
