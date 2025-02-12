@@ -15,7 +15,7 @@ $color-green: #05C48A
 // $oval-shadow-color: #07080D
 
 body
-  background-color: #000055
+  background-color: #00003D
   // overscroll-behavior: none
   // font-family: $font-roadRadio-black
   font-family: $font-alumni-sans-regular
@@ -24,10 +24,8 @@ body
     height: auto
 
 .page
-
   &__hero
     height: 551px
-    border: 1px dashed $color-white
     background: url('../img/bg-hero-desk.png') no-repeat 60% 0/cover
     // @media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 501px)
     //   background: url('../img/bg-desk.jpg') no-repeat 60% 0/cover 
@@ -64,7 +62,7 @@ body
   position: relative
   &__container
     max-width: 1240px
-    border: 1px dashed red
+    // border: 1px dashed red
     margin: 0 auto
     height: 100%
     display: flex
@@ -101,7 +99,7 @@ body
     position: absolute
     width: 100%
     height: 192px
-    bottom: 0
+    bottom: -1px
     background: linear-gradient(180deg, rgba(0, 0, 61, 0.00) 0%, #00003D 100%)
 .section
   &__title
@@ -115,14 +113,16 @@ body
 
 // ABOUT
 .about
+  margin-top: 59px
   height: 658px
-  padding-top: 59px
   &__container
-    max-width: 1240px
+    // max-width: 1240px
+    padding-right: 32px
+    max-width: 1753px
     margin: 0 auto
-    border: 1px dashed red
+    // border: 1px dashed red
     display: flex
-    justify-content: end
+    // justify-content: end
     position: relative
     &::before
       content: ''
@@ -131,19 +131,31 @@ body
       width: 208px
       height: 208px
       position: absolute
-      right: -208px
+      // right: -208px
+      right: 0
       top: 0
+    &::after
+      content: ''
+      background-image: url('../img/about-after-desk.png')
+      background-size: cover
+      width: 273px
+      height: 273px
+      position: absolute
+      bottom: 0
+      // right: -273px
+      right: 0
+      transform: rotate(10deg)
   &__title
     margin-bottom: 75px
 
   &__man
-    max-height: 658px
-    position: absolute
-    left: -270px
+    // max-height: 654px
+    width: 1020px
+    // position: absolute
+    // left: -290px
   &__list
-    width: 570px
-    height: 514px
-    background-color: #ffffff6b
+    width: 571px
+    // background-color: #ffffff6b
   &__items
     display: flex
     flex-direction: column
@@ -160,13 +172,116 @@ body
       width: 51px
       height: 46px
       background-image: url('../img/check.svg')
-
+    
 
 
 
 //SERVICE
 .service
   &__container
-    max-width: 1240px
+    max-width: 1880px
+    height: 851px
     margin: 0 auto
-    border: 1px dashed red
+    // border: 1px dashed red
+    background: url('../img/service-main-desk.png') no-repeat 50% 0/cover
+    position: relative
+  &__title
+    margin-top: 93px
+    text-align: center
+  &__btn
+    position: absolute
+    bottom: 67px
+    right: 0
+    left: 0
+    margin: 0 auto
+
+.types
+  background: url('../img/types-bg-desk.png') no-repeat 50% 0/cover
+  // height: 660px
+  padding-bottom: 180px
+  &__title
+    text-align: center
+    margin: 52px auto 71px
+
+  &__items
+    width: fit-content
+    display: flex
+    margin: 0 auto
+    // height: 275px
+  &__item
+    position: relative
+    width: 340px
+    height: 229px
+    margin-right: -50px
+    background: url('../img/types/item-bg-desk.png') no-repeat 50% 0/cover
+    &--2,&--4
+      margin-top: 50px
+      margin-right: -90px
+      // border: 2px solid orange
+      // align-self: flex-end
+    &--2,&--3
+      // margin-inline: -50px
+  &__item-img
+    width: 134px
+    height: 134px
+    position: absolute
+    left: 50% 
+    top: 23px
+    transform: translateX(-50%)
+  &__item-text
+    position: absolute
+    right: 65px
+    bottom: 24px
+    color: #FFF
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25)
+    font-family: $font-alumni-sans-bold
+    font-size: 30px
+    letter-spacing: 1.2px
+
+  
+
+//CONTACTS
+.contacts
+  background: url('../img/contacts-bg-desk.png') no-repeat 50% 0/cover
+  &__title
+    text-align: center
+    margin-bottom: 80px
+  &__container
+    padding-bottom: 110px
+    display: flex
+    flex-direction: column
+    gap: 30px
+  &__row
+    display: flex
+    justify-content: center
+  &__item
+    display: flex
+    align-items: center
+    background: url('../img/contacts/item-bg-desk.png') no-repeat 0% 0/contain
+    width: 475px
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: 115px
+      height: 100%
+      background: url('../img/contacts/item-before-bg-desk.png') no-repeat 0% 0/contain
+      position: absolute
+      left: 0
+      bottom: 0
+    &--img
+      width: 34px
+      height: 34px
+      margin-left: 43px 
+      margin-right: 38px
+      z-index: 2 
+      // padding: 0 38px 0 43px
+    &--text
+      color: $color-white
+      text-align: center
+      font-family: $font-alumni-sans-medium
+      font-size: 28px
+      line-height: 48px
+      letter-spacing: 0.56px
+      // padding-left: 126px
+      padding-block: 16px
