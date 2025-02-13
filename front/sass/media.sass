@@ -23,6 +23,17 @@
       &--gamepad
         left: 10%
         bottom: 150px
+@media screen and (max-width: 1350px)
+  .hero
+    &__container
+      padding-right: 40px
+  .types
+    &__items
+      padding-right: 50px
+    &__item
+      width: 310px
+      height: 212px
+
 @media screen and (max-width: 1300px)
   .about
     &__img
@@ -47,7 +58,39 @@
         width: 200px
       &--basketball
         width: 90px
+@media screen and (max-width: 1150px)
+  .service
+    &__title
+      font-size: 70px
+      margin-bottom: 0
+    &__crown
+      transform: scale(0.9)
+    &__left
+      transform: scale(0.9)
+      transform-origin: right top
+    &__right
+      transform: scale(0.9)
+      transform-origin: left top
+  .types
+    &__items
+      padding-right: 100px
+    &__item
+      width: 310px
+      height: 212px
 @media screen and (max-width: 1100px)
+  .hero
+    &__left
+      align-self: start
+      margin-top: 40px
+      padding-left: 32px
+    &__right
+      height: 480px
+    &__title
+      font-size: 74px
+    &__subtitle
+      font-size: 22px
+      margin-bottom: 30px
+      width: 311px
   .about
     &__img
       min-width: 600px
@@ -55,8 +98,40 @@
       background-position: center
     &__list
       transform-origin: right
+  .service
+    &__title
+      font-size: 60px
+    &__middle
+      height: 350px
+    &__crown
+      transform: scale(0.9)
+    &__left, &__right
+      transform: scale(0.8)
+  .types
+    padding-bottom: 100px
+    &__title
+      margin-bottom: 40px
+    &__item
+      width: 270px
+      height: 183px
+      margin-right: -35px
+      &--2,&--4
+        margin-right: -70px
+    &__item-img
+      width: 104px
+      height: 104px
+    &__item-text
+      font-size: 22px
+      right: 50px
+      bottom: 15px
+      &--last
+        right: 65px
+  .contacts
+    background: url('../img/contacts/contacts-bg-tab.jpg') no-repeat 50% 0/cover
+
 @media screen and (max-width: 1000px)
   .about
+    margin-top: 30px
     &__container
       &::before
         width: 150px 
@@ -70,6 +145,7 @@
       font-size: 60px
       margin-bottom: 50px
     &__img
+      top: 50px
       transform: scale(1)
       height: 420px
       min-width: 520px
@@ -77,8 +153,66 @@
       transform: scale(1)
       left: -70px
     &__items
-      gap: 20px0
+      gap: 20px
+  .types
+    &__title
+      font-size: 60px
+      margin-bottom: 35px
+    &__items
+      padding-right: 70px
+    &__item
+      width: 200px
+      height: 136px
+      margin-right: -25px
+      &--2,&--4
+        margin-right: -65px
+    &__item-img
+      width: 80px
+      height: 80px
+      top: 13px
+    &__item-text
+      font-size: 18px
+      right: 30px
+      bottom: 14px
+      &--last
+        right: 50px
+
+  .contacts
+    &__title
+      font-size: 60px
+      margin-bottom: 50px
+    &__container
+      padding-bottom: 80px
+    &__item
+      background: url('../img/contacts/item-bg-tab.png') no-repeat 0% 0/contain
+      width: 336px
+      &::before
+        width: 86px
+        background: url('../img/contacts/item-before-bg-tab.png') no-repeat 0% 0/contain
+      &--img
+        width: 28px
+        height: 28px
+        margin-left: 30px 
+        margin-right: 28px
+      &--text
+        font-size: 20px
+        line-height: 36px
+        letter-spacing: 0.4px
+
+
+
+@media screen and (max-width: 950px)
+  .hero
+    &__right
+      position: absolute
+      bottom: 0
+      right: 40px
+      height: 450px
+
 @media screen and (max-width: 900px)
+  .hero
+    &__right
+      height: 400px
   .about
     &__img
       transform: scale(0.9)
@@ -86,7 +220,18 @@
     &__list
       transform: scale(0.9)
       transform-origin: left
+  .service
+    margin-top: -50px
+    &__middle
+      height: 300px
+    &__crown
+      transform: scale(0.7)
+    &__left, &__right
+      transform: scale(0.7)
 @media screen and (max-width: 850px)
+  .hero
+    &__right
+      height: 350px
   .about
     &__img
       transform: scale(0.8)
@@ -132,10 +277,11 @@
         height: 34px
 
     &__img
-      min-width: 50%
-      max-width: 50%
+      min-width: 60%
+      max-width: 60%
       transform: scale(1)
-      top: 0
+      top: 40px
+      right: 40px
       height: 415px
       background-image: url('../img/about/man-tab.png')
       background-position: right
@@ -143,7 +289,6 @@
       background-repeat: no-repeat
 
       &--basketball
-        // position: absolute
         width: 87px
         top: 13px
         right: 12px
