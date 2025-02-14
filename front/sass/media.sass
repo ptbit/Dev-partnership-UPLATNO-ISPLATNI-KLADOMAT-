@@ -332,7 +332,15 @@
         position: absolute
         bottom: 20px
         left: 60px
-        
+  .service
+    margin-top: -60px
+    &__middle
+      height: 280px
+    &__crown
+      transform: scale(0.6)
+    &__left, &__right
+      transform: scale(0.6)
+
 @media screen and (max-width: 700px)
   .hero
     &__left
@@ -359,6 +367,14 @@
       transform: scale(0.9)
       transform-origin: top left
 
+  .service
+    margin-top: -70px
+    &__middle
+      height: 250px
+    &__crown
+      transform: scale(0.5)
+    &__left, &__right
+      transform: scale(0.55)
 //CHANGE MODE
 //CHANGE MODE
 //CHANGE MODE
@@ -376,8 +392,8 @@
       align-self: center
       padding-left: 0
       margin-top: 0
-      button
-        width: 100%
+      // button
+      //   width: 100%
     &__right
       position: relative
       right: 0
@@ -391,6 +407,8 @@
         height: 105px
         bottom: 130px
         right: -40px
+    &__btn
+      margin: 0 auto
   .about
     margin-top: 0
     &__container
@@ -418,6 +436,55 @@
     &__items
       max-width: fit-content
       margin: 0 auto
+  .service
+    &__middle
+      flex-direction: column
+      height: auto
+    &__crown
+      display: none
+    &__left, &__right
+      transform: scale(1)
+      height: 390px
+    &__block
+      width: 100%
+      &::before, &::after
+        display: none
+      &--left
+        background-image: url('../img/service/left-mob2.png')
+        background-size: contain
+      &--right
+        background-image: url('../img/service/right-mob2.png')
+        background-size: contain
+    &__text
+      padding: 0 40px
+      letter-spacing: 0.4px
+      left: 0
+      right: 0
+      text-align: center
+      width: 90%
+      margin: 0 auto
+
+
+@media screen and (max-width: 600px)
+  .service
+    &__left, &__right
+      height: 360px
+      min-width: 100%
+    &__text
+      bottom: 30px
+
+@media screen and (max-width: 550px)
+  .about
+    &__list
+      transform: scale(1)
+    &__title
+      font-size: 45px
+    &__item
+      font-size: 20px
+  .service
+    &__left, &__right
+      height: 340px
+
 @media screen and (max-width: 500px)
   .about
     &__title
@@ -441,14 +508,42 @@
         top: 0
         right: 0  
         width: 76px
-
-@media screen and (max-width: 550px)
-  .about
-    &__list
-      transform: scale(1)
+  .service
     &__title
-      font-size: 45px
-    &__item
+      font-size: 50px
+      line-height: 40px
+
+    &__left, &__right
+      height: 320px
+    &__text
+      padding: 0 20px
       font-size: 20px
+      letter-spacing: 0.4px
+      line-height: 22px
 
+@media screen and (max-width: 450px)
+  .service
+    &__left, &__right
+      height: 290px
 
+@media screen and (max-width: 400px)
+  .hero
+    &__subtitle
+      width: auto
+    &__btn
+      width: 90%
+  .service
+    &__left, &__right
+      height: 270px
+    &__text
+      bottom: 20px
+
+@media screen and (max-width: 350px)
+  .service
+    &__left, &__right
+      height: 250px
+
+@media screen and (max-width: 300px)
+  .service
+    &__left, &__right
+      height: 240px
