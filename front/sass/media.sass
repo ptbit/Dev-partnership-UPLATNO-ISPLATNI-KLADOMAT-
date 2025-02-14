@@ -80,7 +80,7 @@
 @media screen and (max-width: 1100px)
   .page
     &__bg2
-      background: url('../img/bg2-tab.png') no-repeat 60% 0/cover
+      background-image: url('../img/bg2-tab.png')
       height: 900px
   .hero
     &__left
@@ -198,8 +198,9 @@
       &--img
         width: 28px
         height: 28px
-        margin-left: 30px 
+        margin-left: 26px 
         margin-right: 28px
+        margin-top: 1px
       &--text
         font-size: 20px
         line-height: 36px
@@ -263,11 +264,13 @@
         width: 81px
         height: 81px
         top: 30px
+        background-image: url(../img/hero/ball-tab.png)
       &--hand
         width: 158px
         height: 120px
         right: -30px
         bottom: 130px
+        background-image: url(../img/hero/hand-tab.png)
 
   .about
     &__container
@@ -309,9 +312,6 @@
       right: 40px
       height: 415px
       background-image: url('../img/about/man-tab.png')
-      background-position: right
-      background-size: contain
-      background-repeat: no-repeat
 
       &--basketball
         width: 87px
@@ -340,9 +340,20 @@
       transform: scale(0.6)
     &__btn
       margin-bottom: 40px
+    &__block
+      &--left
+        background-image: url('../img/service/left-bg-border-tab.png')
+        background-size: contain
+      &--right
+        background-image: url('../img/service/right-bg-border-tab.png')
+        background-size: contain
   .types
+    background-image: url('../img/types/types-bg-tab.png')
     &__title
       margin-top: 0px
+  .contacts
+    background: url('../img/contacts/contacts-bg-mob.jpg') no-repeat 50% 0/cover
+
 @media screen and (max-width: 715px)
   .types
     &__items
@@ -387,6 +398,9 @@
 //CHANGE MODE **************************************************************************
 //CHANGE MODE **************************************************************************
 @media screen and (max-width: 650px)
+  .page
+    &__bg2
+      background-image: url('../img/bg2-mob.png')
   .hero
     height: auto
     &__container
@@ -410,11 +424,13 @@
       &--bal
         top: 10px
         left: 10px
+        background-image: url(../img/hero/ball-mob.png)
       &--hand
         width: 138px
         height: 105px
         bottom: 130px
         right: -40px
+        background-image: url(../img/hero/hand-mob.png)
     &__btn
       margin: 0 auto
   .about
@@ -430,10 +446,12 @@
       margin: 0 auto
       min-width: auto
       max-width: 100%
-      min-height: 330px
-      background-position: center
+      min-height: 400px
+      background-size: contain
       inset: 0
       transform: scale(1)
+      background-image: url(../img/about/man-mob.png)
+
     &__list
       transform: scale(1)
       width: 100%
@@ -458,10 +476,10 @@
       &::before, &::after
         display: none
       &--left
-        background-image: url('../img/service/left-mob2.png')
+        background-image: url('../img/service/left-mob.png')
         background-size: contain
       &--right
-        background-image: url('../img/service/right-mob2.png')
+        background-image: url('../img/service/right-mob.png')
         background-size: contain
     &__text
       padding: 0 40px
@@ -472,6 +490,7 @@
       width: 90%
       margin: 0 auto
   .types
+    background-image: url('../img/types/types-bg-mob.png')
     &__items
       padding-left: 20px
       padding-right: 20px
@@ -481,6 +500,7 @@
       row-gap: 30px
     &__item
       margin: 0
+      background-image: url('../img/types/item-bg-mob.png')
   .contacts
     &__title
       margin-bottom: 20px
@@ -506,6 +526,10 @@
       padding-right: 10px
 @media screen and (max-width: 550px)
   .about
+    &__img
+      min-width: 350px
+      left: 50%
+      transform: translateX(-50%)
     &__list
       transform: scale(1)
     &__title
@@ -585,6 +609,10 @@
     &__text
       bottom: 20px
 
+@media screen and (max-width: 380px)
+  .hero
+    &__title
+      font-size: 50px
 @media screen and (max-width: 375px)
   .types
     &__title
@@ -611,6 +639,13 @@
   .contacts
     &__item
       transform: scale(0.85)
+@media screen and (max-width: 340px)
+  .hero
+    &__container
+      padding-left: 15px
+      padding-right: 15px
+    &__title
+      font-size: 47px
 @media screen and (max-width: 312px)
   .types
     &__item

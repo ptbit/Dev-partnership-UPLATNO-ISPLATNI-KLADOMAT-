@@ -16,9 +16,13 @@ body
   img
     max-width: 100%
     height: auto
-// section
-//   border: 1px dashed magenta
+  .lite
+    background-color: #000055
+  .dark
+    background-color: #040613
+
 .page
+  overflow: hidden
   &__hero
     height: 551px
     background: url('../img/bg-hero-desk.png') no-repeat 60% 0/cover
@@ -46,6 +50,7 @@ body
     cursor: pointer
     transition: 0.3s linear
     max-width: 90%
+    text-align: center
     &:hover
       background-color: rgb(28, 212, 157)
       transform: scale(1.03)
@@ -55,7 +60,7 @@ body
     height: 1240px
     width: 100%
     position: absolute
-    background: url('../img/bg2-desk.png') no-repeat 60% 0/cover
+    background: url('../img/bg2-desk.png') no-repeat 0 0/cover
 
 
 .hero
@@ -87,6 +92,7 @@ body
     line-height: 70px
     text-transform: uppercase
     span
+      font-family: $font-alumni-sans-bold
       color: $color-pink
   &__subtitle
     margin-bottom: 58px
@@ -107,9 +113,7 @@ body
       position: absolute
       top: 44px
       left: 22px
-      background-image: url('../img/hero/ball-desk.png')
-      background-repeat: no-repeat
-      background-size: contain
+      background: url('../img/hero/ball-desk.png') no-repeat 0 0/contain
       animation: 6s infinite move-ball linear
     &--hand
       width: 232px
@@ -117,9 +121,7 @@ body
       position: absolute
       bottom: 142px
       right: -80px
-      background-image: url('../img/hero/hand-desk.png')
-      background-repeat: no-repeat
-      background-size: cover
+      background: url('../img/hero/hand-desk.png') no-repeat 0 0/cover
       animation: 4s infinite move-hand linear
 
   &__shadow
@@ -148,8 +150,7 @@ body
     position: relative
     &::before
       content: ''
-      background-image: url('../img/about/about-before-desk.png')
-      background-size: cover
+      background: url('../img/about/about-before-desk.png') no-repeat 0 0/cover
       width: 208px
       height: 208px
       position: absolute
@@ -157,8 +158,7 @@ body
       top: 15px
     &::after
       content: ''
-      background-image: url('../img/about/about-after-desk.png')
-      background-size: cover
+      background: url('../img/about/about-after-desk.png') no-repeat 0 0/cover
       width: 273px
       height: 273px
       position: absolute
@@ -171,10 +171,8 @@ body
     position: relative
     width: 1020px
     height: 654px
-    background-image: url('../img/about/man-desk.png')
-    background-position: right
-    background-size: contain
-    background-repeat: no-repeat
+    background: url('../img/about/man-desk.png') no-repeat 0 0/contain
+    // background-position: right
     &--basketball
       position: absolute
       top: 13.31px
@@ -224,12 +222,7 @@ body
       content: ''
       min-width: 51.734px
       height: 46.905px
-      background-image: url('../img/check.png')
-      background-size: cover
-      background-repeat: no-repeat
-    
-
-
+      background: url('../img/check.png') no-repeat 0 0/cover
 
 //SERVICE
 .service
@@ -259,10 +252,8 @@ body
     width: 552px
     height: 418px
     &--left
-      background-image: url('../img/service/left-bg-border-desk.png')
-      background-size: cover
-      background-repeat: no-repeat
       position: relative
+      background: url('../img/service/left-bg-border-desk.png') no-repeat 0 0/cover
       &::before
         content: ''
         position: absolute
@@ -270,8 +261,7 @@ body
         left: -220px
         width: 450px
         height: 535px
-        background-image: url('../img/service/left-before.png')
-        background-size: cover
+        background: url('../img/service/left-before.png') no-repeat 0 0/cover
         z-index: -1
       &::after
         content: ''
@@ -280,16 +270,13 @@ body
         right: -105px
         width: 450px
         height: 535px
-        background-image: url('../img/service/left-after.png')
-        background-size: cover
+        background: url('../img/service/left-after.png') no-repeat 0 0/cover
         z-index: -1
 
 
     &--right
-      background-image: url('../img/service/right-bg-border-desk.png')
-      background-size: cover
-      background-repeat: no-repeat
       position: relative
+      background: url('../img/service/right-bg-border-desk.png') no-repeat 0 0/cover
       &::before
         content: ''
         position: absolute
@@ -297,8 +284,7 @@ body
         left: -135px
         width: 400px
         height: 540px
-        background-image: url('../img/service/right-before.png')
-        background-size: cover
+        background: url('../img/service/right-before.png') no-repeat 0 0/cover
         z-index: -1
       &::after
         content: ''
@@ -307,8 +293,7 @@ body
         right: -205px
         width: 450px
         height: 535px
-        background-image: url('../img/service/right-after.png')
-        background-size: cover
+        background: url('../img/service/right-after.png') no-repeat 0 0/cover
         z-index: -1
   &__right
     min-width: 552px
@@ -339,7 +324,7 @@ body
 
 // TYPES
 .types
-  background: url('../img/types-bg-desk.png') no-repeat 50% 0/cover
+  background: url('../img/types/types-bg-desk.png') no-repeat 50% 0/cover
   padding-bottom: 180px
 
   &__title
@@ -407,12 +392,12 @@ body
       height: 100%
       background: url('../img/contacts/item-before-bg-desk.png') no-repeat 0% 0/contain
       position: absolute
-      left: 0
+      left: -4px
       bottom: 0
     &--img
       width: 34px
       height: 34px
-      margin-left: 43px 
+      margin-left: 38px 
       margin-right: 38px
       z-index: 2 
       // padding: 0 38px 0 43px
