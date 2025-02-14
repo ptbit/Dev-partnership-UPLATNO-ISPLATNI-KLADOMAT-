@@ -16,10 +16,8 @@ body
   img
     max-width: 100%
     height: auto
-  .lite
-    background-color: #000055
-  .dark
-    background-color: #040613
+body.light
+    background-color: #00003D
 
 .page
   overflow: hidden
@@ -456,3 +454,15 @@ body
     transform: rotate(0deg) 
   40%
     transform: rotate(10deg) 
+
+@keyframes move-roketka
+  0%, 60%
+    transform: rotate(0deg) 
+  30%
+    transform: rotate(15deg) 
+
+@keyframes move-club
+  0%, 100%
+    transform: rotate(0deg) translate(0, 0)
+  50%
+    transform: rotate(10deg) translate(-50px, 0)
