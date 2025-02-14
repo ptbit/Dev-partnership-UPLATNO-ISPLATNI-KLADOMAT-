@@ -91,6 +91,7 @@
       height: 480px
     &__title
       font-size: 74px
+      line-height: 60px
     &__subtitle
       font-size: 22px
       margin-bottom: 30px
@@ -216,7 +217,7 @@
 @media screen and (max-width: 900px)
   .hero
     &__right
-      height: 400px
+      height: 440px
   .about
     &__img
       transform: scale(0.9)
@@ -235,7 +236,7 @@
 @media screen and (max-width: 850px)
   .hero
     &__right
-      height: 350px
+      height: 410px
   .about
     &__img
       transform: scale(0.8)
@@ -244,7 +245,29 @@
     &__list
       left: -130px
 //------------------------------- TABLET -------------------------------
+//------------------------------- TABLET -------------------------------
+//------------------------------- TABLET -------------------------------
+//------------------------------- TABLET -------------------------------
 @media screen and (max-width: 768px)
+  .hero
+    &__left
+      padding-left: 30px
+    &__right
+      right: 10px
+      height: 380px
+    &__title
+      margin-bottom: 10px
+    &__terminal
+      &--bal
+        width: 81px
+        height: 81px
+        top: 30px
+      &--hand
+        width: 158px
+        height: 120px
+        right: -30px
+        bottom: 130px
+
   .about
     &__container
       justify-content: start
@@ -311,6 +334,22 @@
         left: 60px
         
 @media screen and (max-width: 700px)
+  .hero
+    &__left
+      padding-left: 20px
+    &__right
+      height: 330px
+      // right: 15px
+    &__terminal
+      &--hand
+        bottom: 100px
+    &__title
+      font-size: 58px
+      line-height: 46px
+      margin-bottom: 14px
+    &__subtitle
+      font-size: 18px
+      margin-bottom: 24px
   .about
     &__img
       margin-left: -50px 
@@ -320,6 +359,89 @@
       transform: scale(0.9)
       transform-origin: top left
 
+//CHANGE MODE
+//CHANGE MODE
+//CHANGE MODE
+@media screen and (max-width: 650px)
+  .hero
+    height: auto
+    &__container
+      padding-top: 30px
+      padding-right: 23px
+      padding-left: 23px
+      flex-direction: column
+      gap: 35px
+      align-items: center
+    &__left
+      align-self: center
+      padding-left: 0
+      margin-top: 0
+      button
+        width: 100%
+    &__right
+      position: relative
+      right: 0
+      padding-top: 0
+    &__terminal
+      &--bal
+        top: 10px
+        left: 10px
+      &--hand
+        width: 138px
+        height: 105px
+        bottom: 130px
+        right: -40px
+  .about
+    margin-top: 0
+    &__container
+      padding: 0 20px
+      flex-direction: column-reverse
+      gap: 35px
+      &::before
+        display: none
+    &__img
+      position: relative
+      margin: 0 auto
+      min-width: auto
+      max-width: 100%
+      min-height: 330px
+      background-position: center
+      inset: 0
+      transform: scale(1)
+    &__list
+      transform: scale(1)
+      width: 100%
+    &__title
+      font-size: 50px
+      line-height: 40px
+      text-align: center
+    &__items
+      max-width: fit-content
+      margin: 0 auto
+@media screen and (max-width: 500px)
+  .about
+    &__title
+      margin-bottom: 20px
+    &__item
+      &::before
+        min-width: 30.297px
+        height: 27.469px
+    &__img
+      // img
+      //   border: 1px dashed yellow
+      &--gamepad
+        bottom: 5px
+        left: 10px
+        width: 100px
+        height: 100px
+      &--soccer
+        right: 70px
+        bottom: 50px
+      &--basketball
+        top: 0
+        right: 0  
+        width: 76px
+
 @media screen and (max-width: 550px)
   .about
     &__list
@@ -328,3 +450,5 @@
       font-size: 45px
     &__item
       font-size: 20px
+
+
