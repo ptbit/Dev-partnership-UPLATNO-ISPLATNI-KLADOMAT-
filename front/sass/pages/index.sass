@@ -186,8 +186,8 @@ body
       position: absolute
       right: 271px
       bottom: 107px
-      animation: 8s infinite rotate-ball linear
-
+      right: 30%
+      animation: 6s infinite jump-ball linear
     &--hand
       width: 270px
       position: absolute
@@ -417,13 +417,21 @@ body
   50%
     transform: translate(-30%,30%)
 
-@keyframes rotate-ball
+@keyframes jump-ball
   0%
     transform: rotate(0) translateX(0)
   50%
     transform: rotate(180deg) translateX(-100px)
   100%
     transform: rotate(360deg) translateX(0)
+
+@keyframes jump-ball-tablet
+  0%, 100%
+    transform: rotate(0) translateX(0)
+  50%
+    transform: rotate(80deg) translateX(-100px)
+  // 100%
+  //   transform: rotate(360deg) translateX(0)
 
 @keyframes move-hand
   0%, 100%
@@ -436,6 +444,12 @@ body
     transform: translate(0, 0)
   50%
     transform: translate(-60%,100%)
+
+@keyframes move-basketball-tablet
+  0%, 100%
+    transform: translate(0, 0) rotate(0deg)
+  50%
+    transform: translate(-30px, 80px) rotate(-180deg)
 
 @keyframes move-gamepad
   0%, 100%

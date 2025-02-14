@@ -49,11 +49,11 @@
     &__img
       min-width: 800px
       &--gamepad
-        width: 150px
+        width: 120px
         left: 10%
         bottom: 50px
       &--soccer
-        width: 100px
+        width: 80px
       &--hand
         width: 200px
       &--basketball
@@ -289,7 +289,6 @@
         width: 140px
         height: 140px
         bottom: -50px
-        display: none
     &__title
       font-size: 60px
       margin-bottom: 37px
@@ -318,11 +317,15 @@
         top: 13px
         right: 12px
         z-index: -1
+        animation: 13s infinite move-basketball-tablet linear
+
       &--soccer
         width: 80px
         position: absolute
         right: 90px
         bottom: 80px
+        animation: 8s infinite jump-ball-tablet linear
+
       &--hand
         display: none
       &--gamepad
@@ -451,7 +454,13 @@
       inset: 0
       transform: scale(1)
       background-image: url(../img/about/man-mob.png)
-
+      &::before
+        content: ''
+        background: url('../img/about/about-before-tab.png') no-repeat 0 0/cover
+        width: 123px
+        height: 123px
+        position: absolute
+        top: 15px
     &__list
       transform: scale(1)
       width: 100%
@@ -557,7 +566,9 @@
         width: 100px
         height: 100px
       &--soccer
-        right: 70px
+        // right: 70px
+        right: 0
+        left: 70%
         bottom: 50px
       &--basketball
         top: 0
