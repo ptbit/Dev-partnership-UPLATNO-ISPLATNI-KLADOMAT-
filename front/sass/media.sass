@@ -191,6 +191,7 @@
     &__item
       background: url('../img/contacts/item-bg-tab.png') no-repeat 0% 0/contain
       width: 336px
+      height: 60px
       &::before
         width: 86px
         background: url('../img/contacts/item-before-bg-tab.png') no-repeat 0% 0/contain
@@ -286,7 +287,6 @@
         height: 140px
         bottom: -50px
         display: none
-
     &__title
       font-size: 60px
       margin-bottom: 37px
@@ -294,7 +294,6 @@
       left: 0
       transform: scale(1)
       min-width: 50%
-
     &__items
       gap: 21px
     &__item
@@ -302,7 +301,6 @@
       &::before
         min-width: 38px
         height: 34px
-
     &__img
       min-width: 60%
       max-width: 60%
@@ -340,7 +338,16 @@
       transform: scale(0.6)
     &__left, &__right
       transform: scale(0.6)
-
+    &__btn
+      margin-bottom: 40px
+  .types
+    &__title
+      margin-top: 0px
+@media screen and (max-width: 715px)
+  .types
+    &__items
+        transform: scale(0.8)
+        transform-origin: center
 @media screen and (max-width: 700px)
   .hero
     &__left
@@ -375,9 +382,10 @@
       transform: scale(0.5)
     &__left, &__right
       transform: scale(0.55)
-//CHANGE MODE
-//CHANGE MODE
-//CHANGE MODE
+
+//CHANGE MODE **************************************************************************
+//CHANGE MODE **************************************************************************
+//CHANGE MODE **************************************************************************
 @media screen and (max-width: 650px)
   .hero
     height: auto
@@ -463,7 +471,26 @@
       text-align: center
       width: 90%
       margin: 0 auto
-
+  .types
+    &__items
+      padding-left: 20px
+      padding-right: 20px
+      transform: scale(1)
+      flex-wrap: wrap
+      justify-content: center
+      row-gap: 30px
+    &__item
+      margin: 0
+  .contacts
+    &__title
+      margin-bottom: 20px
+    &__container
+      gap: 0
+    &__row
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-bottom: 20px
 
 @media screen and (max-width: 600px)
   .service
@@ -472,7 +499,11 @@
       min-width: 100%
     &__text
       bottom: 30px
-
+  .types
+    padding-bottom: 60px
+    &__items
+      padding-left: 10px
+      padding-right: 10px
 @media screen and (max-width: 550px)
   .about
     &__list
@@ -525,7 +556,23 @@
   .service
     &__left, &__right
       height: 290px
-
+  .types
+    &__items
+      row-gap: 50px
+    &__item
+      margin: 0
+      width: 166px
+      height: 113px
+      &-text
+        font-size: 24px
+        right: 0
+        bottom: -30px
+        left: 0
+        text-align: center
+        padding-left: 20px
+  .contacts
+    &__item
+      margin-bottom: 10px
 @media screen and (max-width: 400px)
   .hero
     &__subtitle
@@ -538,11 +585,47 @@
     &__text
       bottom: 20px
 
+@media screen and (max-width: 375px)
+  .types
+    &__title
+      font-size: 50px
+      line-height: 40px
+    &__item
+      width: 135px
+      height: 91px
+      &-img
+        width: 62px
+        height: 62px
+      &-text
+        font-size: 20px
+  .contacts
+    &__title
+      font-size: 50px
+      line-height: 40px
+    &__item
+      transform: scale(0.9)
 @media screen and (max-width: 350px)
   .service
     &__left, &__right
       height: 250px
-
+  .contacts
+    &__item
+      transform: scale(0.85)
+@media screen and (max-width: 312px)
+  .types
+    &__item
+      width: 115px
+      height: 78px
+      &-img
+        width: 55px
+        height: 55px
+      &-text
+        font-size: 18px
+        padding-left: 10px
+  .contacts
+    &__item
+      transform: scale(0.8)
+      margin-bottom: 0
 @media screen and (max-width: 300px)
   .service
     &__left, &__right
