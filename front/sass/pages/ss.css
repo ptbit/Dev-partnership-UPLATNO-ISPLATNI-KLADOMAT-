@@ -1,0 +1,1335 @@
+@font-face {
+    font-family: SuisseIntl-Medium;
+    src: url(/minio/lobby/main/fonts/SuisseIntl-Medium.woff);
+    font-weight: 500
+}
+
+@font-face {
+    font-family: SuisseIntl-SemiBold;
+    src: url(/minio/lobby/main/fonts/SuisseIntl-SemiBold.woff);
+    font-weight: 600
+}
+
+@font-face {
+    font-family: WulkanDisplay;
+    src: url(/minio/lobby/main/fonts/WulkanDisplay-SemiBoldItalic.woff);
+}
+
+html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    height: 100%
+}
+
+ul {
+    list-style: none
+}
+
+h1,h2,h3,li,p,ul {
+    padding: 0;
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+footer *,header *,main * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.light {
+    background-color: #005!important;
+}
+
+.content-conteiner {
+    min-height: 100%;
+    margin-bottom: -141px
+}
+
+.content-conteiner:after {
+    content: '';
+    display: block;
+    height: 141px
+}
+
+.Footer_container__1liRG {
+  margin-top: 0;
+}
+
+.container,.container-aviator {
+    max-width: 1248px;
+    margin: auto
+}
+
+.container-seo {
+    max-width: 1214px;
+    margin: auto
+}
+
+.fav-page {
+    padding-bottom: 48px;
+    font-family: SuisseIntl-Medium,sans-serif;
+    -webkit-tap-highlight-color: transparent
+}
+
+.light .fav-page {
+    background: #005;
+}
+
+.fav-page .start-btn {
+    font-size: 17px;
+    border-radius: 4px;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear
+}
+
+.fav-page .fav-sections {
+    text-align: center
+}
+
+.fav-page .fav-sections .banner-mobile-btn {
+    display: inline-block
+}
+
+.fav-page .fav-sections__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: 40px
+}
+
+.fav-page .fav-sections__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 32%;
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    position: relative;
+    border: 4px solid;
+    border-top: none;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(4, 0, 140, 1)) 1 30%;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 42px 20px 60px;
+    text-align: center;
+    -webkit-transition: border-image 0.3s linear;
+    -o-transition: border-image 0.3s linear;
+    transition: border-image 0.3s linear;
+}
+.dark .fav-page .fav-sections__item {
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #262832) 1 30%;
+}
+.fav-page .fav-sections__item:hover {
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 38, 126, 1)) 1 30%;
+}
+.fav-page .fav-sections__title {
+    font-family: SuisseIntl-SemiBold,sans-serif;
+    color: #e8e8e8;
+    font-size: 33px;
+    line-height: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.7px;
+    margin: -20px auto 0
+}
+
+.fav-page .fav-sections__subtitle {
+    font-size: 15px;
+    color: #e8e8e8;
+    text-align: center;
+    height: 38px;
+    letter-spacing: .4px;
+    font-family: SuisseIntl-Medium,sans-serif;
+    overflow: hidden;
+    margin-top: 7px
+}
+
+.fav-page .fav-sections__btn {
+    color: #05c489;
+    border: 2px #05c489 solid;
+    margin: 20px 0 0;
+    width: 220px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 17px 0 15px;
+    font-family: SuisseIntl-Medium,sans-serif
+}
+
+.fav-page .fav-sections__btn:hover {
+    background: #05c489;
+    color: #005
+}
+
+.fav-page .fav-casino,.fav-page .fav-live,.fav-page .fav-sport {
+    margin-top: 48px
+}
+
+.fav-page .fav-casino__wrapper,.fav-page .fav-live__wrapper,.fav-page .fav-sport__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: unset;
+    -webkit-align-items: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+.fav-page .fav-casino__main,.fav-page .fav-live__main,.fav-page .fav-sport__main {
+    background: #ff267e;
+    width: 480px;
+    height: 488px;
+    margin-right: 15px;
+    border-radius: 2px;
+    position: relative
+}
+.dark .fav-page .fav-casino__main,
+.dark .fav-page .fav-live__main,
+.dark .fav-page .fav-sport__main {
+    background: #2c2e3a;
+}
+
+.fav-page .fav-casino__main:before,.fav-page .fav-live__main:before,.fav-page .fav-sport__main:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0
+}
+.dark .fav-page .fav-casino__main:before,
+.dark .fav-page .fav-live__main:before,
+.dark .fav-page .fav-sport__main:before {
+    filter: grayscale(1);
+}
+.fav-page .fav-casino__main-wrapper,.fav-page .fav-live__main-wrapper,.fav-page .fav-sport__main-wrapper {
+    padding: 31px 140px 0 40px;
+    position: relative
+}
+
+.fav-page .fav-casino__main-title,.fav-page .fav-live__main-title,.fav-page .fav-sport__main-title {
+    font-family: SuisseIntl-SemiBold,sans-serif;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    font-size: 33px;
+    line-height: 35px;
+    color: #005
+}
+.dark .fav-page .fav-casino__main-title,
+.dark .fav-page .fav-live__main-title,
+.dark .fav-page .fav-sport__main-title {
+    color: #e8e8e8;
+}
+.fav-page .fav-casino__main-subtitle,.fav-page .fav-live__main-subtitle,.fav-page .fav-sport__main-subtitle {
+    font-family: SuisseIntl-Medium,sans-serif;
+    color: #e8e8e8;
+    margin-top: 8px;
+    letter-spacing: .5px;
+    font-size: 15px;
+    line-height: 20px
+}
+
+.fav-page .fav-casino__main-btn,.fav-page .fav-live__main-btn,.fav-page .fav-sport__main-btn {
+    font-family: SuisseIntl-Medium,sans-serif;
+    border: 2px var(--txt_color_1) solid;
+    margin: 26px 0 0;
+    text-align: center;
+    width: 220px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 16px 0
+}
+
+.fav-page .fav-casino__main-btn:hover,.fav-page .fav-live__main-btn:hover,.fav-page .fav-sport__main-btn:hover {
+    color: #ff267e;
+    background: #005
+}
+.dark .fav-page .fav-casino__main-btn:hover,
+.dark .fav-page .fav-live__main-btn:hover,
+.dark .fav-page .fav-sport__main-btn:hover {
+    color: #fff;
+    background: #ff267e;
+    border-color: #ff267e;
+}
+.fav-page .fav-casino__types,.fav-page .fav-live__types,.fav-page .fav-sport__types {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: unset;
+    -webkit-align-items: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    width: 744px
+}
+
+.fav-page .fav-casino__type,.fav-page .fav-live__type,.fav-page .fav-sport__type {
+    position: relative;
+    width: 232px;
+    height: 232px;
+    background-size: cover;
+    border-radius: 2px;
+    overflow: hidden
+}
+
+.fav-page .fav-casino__type-wrapper,.fav-page .fav-live__type-wrapper,.fav-page .fav-sport__type-wrapper {
+    background: rgba(0,0,85,.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out
+}
+.dark .fav-page .fav-casino__type-wrapper,
+.dark .fav-page .fav-live__type-wrapper,
+.dark .fav-page .fav-sport__type-wrapper {
+    background: rgba(0,0,0,.6);
+}
+.fav-page .fav-casino__type-btn,.fav-page .fav-live__type-btn,.fav-page .fav-sport__type-btn {
+    background: #ff267e;
+    font-family: SuisseIntl-SemiBold,sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 1.4px;
+    border-radius: 2px;
+    color: #005;
+    padding: 15px 26px 13px;
+    text-align: center;
+    -webkit-transition: background .4s linear;
+    -o-transition: background .4s linear;
+    transition: background .4s linear
+}
+
+.fav-page .fav-casino__type:hover .fav-casino__type-wrapper,.fav-page .fav-casino__type:hover .fav-live__type-wrapper,.fav-page .fav-casino__type:hover .fav-sport__type-wrapper,.fav-page .fav-live__type:hover .fav-casino__type-wrapper,.fav-page .fav-live__type:hover .fav-live__type-wrapper,.fav-page .fav-live__type:hover .fav-sport__type-wrapper,.fav-page .fav-sport__type:hover .fav-casino__type-wrapper,.fav-page .fav-sport__type:hover .fav-live__type-wrapper,.fav-page .fav-sport__type:hover .fav-sport__type-wrapper {
+    opacity: 1
+}
+
+.fav-page .fav-casino__type:hover .fav-sport__type-btn,.fav-page .fav-live__type:hover .fav-sport__type-btn,.fav-page .fav-sport__type:hover .fav-sport__type-btn {
+    background: #ff267e;
+    color: #e8e8e8;
+}
+
+.fav-page .fav-casino__mobBtn,.fav-page .fav-casino__mobSubtitle,.fav-page .fav-casino__mobTitle,.fav-page .fav-live__mobBtn,.fav-page .fav-live__mobSubtitle,.fav-page .fav-live__mobTitle,.fav-page .fav-sport__mobBtn,.fav-page .fav-sport__mobSubtitle,.fav-page .fav-sport__mobTitle {
+    display: none
+}
+
+.fav-page .fav-sport__main:before {
+    background: url(/minio/lobby/main/img/sportsbook-img.png) no-repeat 0 0/contain;
+    width: 479px;
+    height: 487px
+}
+
+.fav-page .fav-sport__type:nth-of-type(1) {
+    background-image: url(/minio/lobby/main/img/sportsbook-icon-3.png)
+}
+
+.fav-page .fav-sport__type:nth-of-type(2) {
+    background-image: url(/minio/lobby/main/img/sportsbook-icon-5.png)
+}
+
+.fav-page .fav-sport__type:nth-of-type(3) {
+    background-image: url(/minio/lobby/main/img/sportsbook-icon-2.png)
+}
+
+.fav-page .fav-sport__type:nth-of-type(4) {
+    background-image: url(/minio/lobby/main/img/sportsbook-icon-6.png)
+}
+
+.fav-page .fav-sport__type:nth-of-type(5) {
+    background-image: url(/minio/lobby/main/img/sportsbook-icon-1.png)
+}
+
+.fav-page .fav-sport__type:nth-of-type(6) {
+    background-image: url(/minio/lobby/main/img/sportsbook-icon-4.png)
+}
+
+.fav-page .fav-sport__type-wrapper {
+    background: 0 0;
+    opacity: 1
+}
+
+.fav-page .fav-sport__type-btn {
+    background: #005;
+    color: #e8e8e8;
+}
+.dark .fav-page .fav-sport__type-btn {
+    background: #2c2e3a;
+    color: #e8e8e8;
+}
+.fav-page .fav-casino__main {
+    margin: 0 0 0 15px
+}
+
+.fav-page .fav-casino__main:before {
+    background: url(/minio/lobby/main/img/casino-img.png) no-repeat 0 0/contain;
+    width: 478px;
+    height: 486px
+}
+
+.fav-page .fav-casino__type:nth-of-type(1) {
+    background-image: url(/minio/lobby/main/img/burning-hot.jpeg);
+}
+
+.fav-page .fav-casino__type:nth-of-type(2) {
+    background-image: url(/minio/lobby/main/img/book-of-ra.jpeg);
+}
+
+.fav-page .fav-casino__type:nth-of-type(3) {
+    background-image: url(/minio/lobby/main/img/book-of-dead.jpeg);
+}
+
+.fav-page .fav-casino__type:nth-of-type(4) {
+    background-image: url(/minio/lobby/main/img/lucky-ladys-charm.jpeg);
+}
+
+.fav-page .fav-casino__type:nth-of-type(5) {
+    background-image: url(/minio/lobby/main/img/5-dazzling-hot.jpeg);
+}
+
+.fav-page .fav-casino__type:nth-of-type(6) {
+    background-image: url(/minio/lobby/main/img/european-roulette.jpeg);
+}
+
+.fav-page .fav-aviator {
+    margin-top: 48px
+}
+
+.fav-page .fav-aviator__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 15px 81px 0 111px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.fav-page .fav-aviator__box {
+    background-color: #f2f3f4;
+    height: 160px;
+    position: relative;
+    overflow: hidden
+}
+
+.fav-page .fav-aviator__center {
+    position: relative;
+    z-index: 8;
+    font-family: RobotoCond-Bold,sans-serif;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.fav-page .fav-aviator__logo {
+    width: 188px
+}
+
+.fav-page .fav-aviator__subtitle {
+    color: #7085ae;
+    font-family: SuisseIntl-Medium,sans-serif;
+    font-size: 18px;
+    margin-top: 12px
+}
+
+.fav-page .fav-aviator__btn {
+    font-family: SuisseIntl-Medium,sans-serif;
+    background-color: #ff267e;
+    text-transform: uppercase;
+    color: #005;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 15px 56px 14px;
+    display: inline-block;
+    margin-top: -15px
+}
+
+.fav-page .fav-aviator__subBtn {
+    font-family: SuisseIntl-Medium,sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #da1a32;
+    font-weight: 700;
+    margin-top: 22px;
+    text-align: center;
+    text-decoration: none;
+    display: none
+}
+
+.fav-page .fav-aviator__plane {
+    width: 235px;
+    margin-top: -7px
+}
+
+.fav-page .fav-aviator__cloudFirst {
+    top: 0;
+    left: -10%;
+    width: 345px
+}
+
+.fav-page .fav-aviator__cloudSecond {
+    width: 140px;
+    top: 20px;
+    left: 25%
+}
+
+.fav-page .fav-aviator__cloudThird {
+    top: 0;
+    width: 345px;
+    right: 100px
+}
+
+.fav-page .fav-aviator__cloudForth {
+    width: 135px;
+    right: 0;
+    bottom: -30%
+}
+
+.fav-page .fav-live__main:before {
+    background: url(/minio/lobby/main/img/live-casino-img.png) no-repeat 0 0/contain;
+    width: 478px;
+    height: 486px
+}
+
+.fav-page .fav-live__type:nth-of-type(1) {
+    background-image: url(/minio/lobby/main/img/live-img-1.png)
+}
+
+.fav-page .fav-live__type:nth-of-type(2) {
+    background-image: url(/minio/lobby/main/img/live-img-2.png)
+}
+
+.fav-page .fav-live__type:nth-of-type(3) {
+    background-image: url(/minio/lobby/main/img/live-img-3.png)
+}
+
+.fav-page .fav-live__type:nth-of-type(4) {
+    background-image: url(/minio/lobby/main/img/live-img-4.png)
+}
+
+.fav-page .fav-live__type:nth-of-type(5) {
+    background-image: url(/minio/lobby/main/img/live-img-5.png)
+}
+
+.fav-page .fav-live__type:nth-of-type(6) {
+    background-image: url(/minio/lobby/main/img/live-img-6.png)
+}
+
+.fav-page .fav-live__type-wrapper {
+    bottom: 60px
+}
+
+.fav-page .fav-live__type-txt {
+    font-family: SuisseIntl-Medium,sans-serif;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    text-transform: uppercase;
+    color: #ff267e;
+    background: #07076b;
+    padding: 18px 17px 12px
+}
+
+.fav-page .fav-live__type-title {
+    font-size: 10px;
+    letter-spacing: .6px
+}
+
+.fav-page .fav-live__type-subtitle {
+    font-size: 14px;
+    margin-top: 3px;
+    letter-spacing: .3px
+}
+
+.fav-page .fav-application {
+    margin-top: 129px
+}
+
+.fav-page .fav-application__title {
+    font-size: 44px;
+    color: #e8e8e8;
+    font-family: SuisseIntl-SemiBold,sans-serif;
+    letter-spacing: 2.2px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.fav-page .fav-application__subtitle {
+    font-family: SuisseIntl-Medium,sans-serif;
+    color: #e8e8e8;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: .6px;
+    margin-top: 11px
+}
+
+.fav-page .fav-application__icons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: 41px
+}
+
+.fav-page .fav-application__icon {
+    width: 189px;
+    display: block
+}
+
+.fav-page .fav-application__icon:first-child {
+    margin-right: 16px
+}
+
+.fav-page .fav-application__computer {
+    width: 55%;
+    margin: 82px auto 0
+}
+
+.dark .fav-page .fav-application__computer .comp-desk {
+    content: url(/minio/lobby/main/img/devices_hr_dark.png);
+}
+
+.dark .fav-page .fav-application__computer .comp-mob {
+    content: url(/minio/lobby/main/img/devices_hr_dark-mob.png);
+}
+
+.fav-page .fav-seo {
+    padding: 137px 0 141px
+}
+
+.fav-page .fav-seo .container-seo {
+    background: #00004c;
+    padding: 25px 21px
+}
+
+.fav-page .fav-seo__wrapper {
+    color: #d1d7e5;
+    height: 704px;
+    overflow-y: scroll
+}
+
+.fav-page .fav-seo__wrapper::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent
+}
+
+.fav-page .fav-seo__wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(112,133,174,.3);
+    border-radius: 9px;
+    -webkit-box-shadow: 0 1px 16px rgba(0,0,0,.1);
+    box-shadow: 0 1px 16px rgba(0,0,0,.1);
+    width: 5px
+}
+
+.fav-page .fav-seo__wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(112,133,174,.8)
+}
+
+.fav-page .fav-seo__txt {
+    padding: 15px 28px;
+    letter-spacing: .01em;
+    font-family: SuisseIntl-Medium,sans-serif
+}
+
+.fav-page .fav-seo__title {
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+.fav-page .fav-seo__subtitle {
+    font-size: 16px;
+    margin-bottom: 10px
+}
+
+.fav-page .fav-seo__paragraph {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 25px
+}
+
+.comp-mob {
+    display: none
+}
+
+.absolutePos {
+    position: absolute
+}
+
+.flyClouds {
+    -webkit-animation-name: fly;
+    animation-name: fly;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+@-webkit-keyframes fly {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateX(-150px);
+        transform: translateX(-150px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes fly {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateX(-150px);
+        transform: translateX(-150px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1s;
+    animation: fade-in 1s
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(.7,.7);
+        transform: scale(.7,.7)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(.7,.7);
+        transform: scale(.7,.7)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .container,.container-aviator,.container-seo {
+        max-width:992px
+    }
+
+    .fav-page .fav-sections__item {
+        padding: 40px 20px 47px
+    }
+
+    .fav-page .fav-sections__title {
+        font-size: 25px;
+        line-height: 25px
+    }
+
+    .fav-page .fav-sections__subtitle {
+        line-height: 20px;
+        margin-top: 20px;
+        height: 60px
+    }
+
+    .fav-page .fav-sections__btn {
+        margin: 33px 0 0
+    }
+
+    .fav-page .fav-casino__main,.fav-page .fav-live__main,.fav-page .fav-sport__main {
+        width: 392px;
+        height: 384px
+    }
+
+    .fav-page .fav-casino__main-wrapper,.fav-page .fav-live__main-wrapper,.fav-page .fav-sport__main-wrapper {
+        padding: 23px 32px 0
+    }
+
+    .fav-page .fav-casino__main-subtitle,.fav-page .fav-live__main-subtitle,.fav-page .fav-sport__main-subtitle {
+        width: 60%;
+        margin-top: 4px
+    }
+
+    .fav-page .fav-casino__main-btn,.fav-page .fav-live__main-btn,.fav-page .fav-sport__main-btn {
+        margin: 14px 0 0
+    }
+
+    .fav-page .fav-casino__types,.fav-page .fav-live__types,.fav-page .fav-sport__types {
+        width: 584px
+    }
+
+    .fav-page .fav-casino__type,.fav-page .fav-live__type,.fav-page .fav-sport__type {
+        width: 184px;
+        height: 184px
+    }
+
+    .fav-page .fav-casino__type-btn,.fav-page .fav-live__type-btn,.fav-page .fav-sport__type-btn {
+        font-size: 14px;
+        padding: 14px 18px 12px
+    }
+
+    .fav-page .fav-sport__main:before {
+        width: 336px;
+        height: 342px
+    }
+
+    .fav-page .fav-casino__main:before {
+        width: 351px;
+        height: 357px
+    }
+
+    .fav-page .fav-live__main:before {
+        width: 328px;
+        height: 333px
+    }
+
+    .fav-page .fav-aviator__wrapper {
+        padding: 15px 0 0 55px
+    }
+
+    .fav-page .fav-aviator__center {
+        margin-left: -42px
+    }
+
+    .fav-page .fav-aviator__plane {
+        margin-right: -9px
+    }
+
+    .fav-page .fav-application {
+        margin-top: 93px
+    }
+
+    .fav-page .fav-application__icons {
+        margin-top: 37px
+    }
+
+    .fav-page .fav-application__computer {
+        width: 800px
+    }
+
+    .fav-page .fav-seo {
+        padding: 61px 16px 141px
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .fav-page .container,.fav-page .container-aviator,.fav-page .container-seo {
+        max-width: 728px
+    }
+
+    .fav-page .fav-sections {
+        margin-top: 50px
+    }
+
+    .fav-page .fav-sections__wrapper {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .fav-page .fav-sections__item {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        padding: 63px 20px 54px
+    }
+
+    .fav-page .fav-sections__title {
+        font-size: 33px;
+        line-height: 33px
+    }
+
+    .fav-page .fav-sections__subtitle {
+        margin: 7px auto 0;
+        width: 290px
+    }
+
+    .fav-page .fav-sections__btn {
+        margin: 20px 0 0
+    }
+
+    .fav-page .fav-casino__main,.fav-page .fav-live__main,.fav-page .fav-sport__main {
+        width: 376px;
+        height: 516px;
+        margin-right: 10px
+    }
+
+    .fav-page .fav-casino__types,.fav-page .fav-live__types,.fav-page .fav-sport__types {
+        width: 340px
+    }
+
+    .fav-page .fav-casino__type,.fav-page .fav-live__type,.fav-page .fav-sport__type {
+        width: 164px;
+        height: 164px
+    }
+
+    .fav-page .fav-casino__type-btn,.fav-page .fav-live__type-btn,.fav-page .fav-sport__type-btn {
+        font-size: 14px;
+        padding: 13px 10px 13px
+    }
+
+    .fav-page .fav-sport__main:before {
+        width: 375px;
+        height: 381px
+    }
+
+    .fav-page .fav-casino__main {
+        margin: 0 0 0 10px
+    }
+
+    .fav-page .fav-aviator__wrapper {
+        padding: 23px 0 0 31px
+    }
+
+    .fav-page .fav-aviator__center {
+        margin-left: -71px;
+        margin-top: 3px
+    }
+
+    .fav-page .fav-aviator__plane {
+        width: 205px;
+        margin-right: -32px;
+        margin-top: 5px
+    }
+
+    .fav-page .fav-live__type-txt {
+        padding: 12px 12px 8px
+    }
+
+    .fav-page .fav-live__type-title {
+        font-size: 8px
+    }
+
+    .fav-page .fav-live__type-subtitle {
+        font-size: 12px;
+        margin-top: 2px
+    }
+
+    .fav-page .fav-application {
+        margin-top: 77px
+    }
+
+    .fav-page .fav-application__title {
+        font-size: 40px
+    }
+
+    .fav-page .fav-application__subtitle {
+        font-size: 18px
+    }
+
+    .fav-page .fav-application__icons {
+        margin-top: 30px
+    }
+
+    .fav-page .fav-application__computer {
+        width: 700px;
+        margin-top: 50px
+    }
+
+    .fav-page .fav-seo {
+        padding: 35px 16px 141px
+    }
+
+    .fav-page .fav-seo__txt {
+        padding: 15px 16px
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .fav-page .container,.fav-page .container-seo {
+        max-width: 344px
+    }
+
+    .fav-page .container-aviator {
+        max-width: 375px
+    }
+
+    .fav-page .fav-sections {
+        margin-top: 28px
+    }
+
+    .fav-page .fav-sections__item {
+        padding: 71px 20px 52px;
+        margin-bottom: 16px;
+    }
+
+    .fav-page .fav-sections__item:last-child {
+        margin-bottom: 0
+    }
+
+    .fav-page .fav-casino,.fav-page .fav-live,.fav-page .fav-sport {
+        margin-top: 59px;
+        text-align: center
+    }
+
+    .fav-page .fav-casino__main,.fav-page .fav-live__main,.fav-page .fav-sport__main {
+        display: none
+    }
+
+    .fav-page .fav-casino__mobTitle,.fav-page .fav-live__mobTitle,.fav-page .fav-sport__mobTitle {
+        display: block;
+        font-family: SuisseIntl-SemiBold,sans-serif;
+        font-size: 33px;
+        text-transform: uppercase;
+        letter-spacing: 1.7px;
+        color: #e8e8e8;
+    }
+
+    .fav-page .fav-casino__mobSubtitle,.fav-page .fav-live__mobSubtitle,.fav-page .fav-sport__mobSubtitle {
+        display: block;
+        margin: 3px 0 0;
+        letter-spacing: .5px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #e8e8e8;
+    }
+
+    .fav-page .fav-casino__wrapper,.fav-page .fav-live__wrapper,.fav-page .fav-sport__wrapper {
+        margin-top: 23px
+    }
+
+    .fav-page .fav-casino__types,.fav-page .fav-live__types,.fav-page .fav-sport__types {
+        width: 100%
+    }
+
+    .fav-page .fav-casino__type,.fav-page .fav-live__type,.fav-page .fav-sport__type {
+        width: 168px;
+        height: 168px;
+        margin-top: 8px
+    }
+
+    .fav-page .fav-casino__mobBtn,.fav-page .fav-live__mobBtn,.fav-page .fav-sport__mobBtn {
+        margin-top: 20px;
+        display: inline-block;
+        font-family: SuisseIntl-SemiBold,sans-serif;
+        color: #ff267e;
+        font-size: 17px;
+        padding: 17px 97px 17px;
+        background-color: transparent;
+        text-transform: uppercase;
+        border-radius: 4px;
+        letter-spacing: 1.4px;
+        border: 2px solid #ff267e;
+        -webkit-transition: background-color .4s ease;
+        -o-transition: background-color .4s ease;
+        transition: background-color .4s ease;
+        text-decoration: none
+    }
+
+    .fav-page .fav-casino__mobBtn:hover,.fav-page .fav-live__mobBtn:hover,.fav-page .fav-sport__mobBtn:hover {
+        background-color: #ff267e;
+        color: #005
+    }
+
+    .fav-page .fav-sport__type-name {
+        font-size: 14px;
+        padding: 9px 0
+    }
+
+    .fav-page .fav-live__type {
+        text-align: left;
+        margin-bottom: 60px;
+        overflow: visible
+    }
+
+    .fav-page .fav-live__type-wrapper {
+        bottom: 0
+    }
+
+    .fav-page .fav-live__type-txt {
+        bottom: -60px;
+        padding: 15px 16px 12px
+    }
+
+    .fav-page .fav-live__type-title {
+        font-size: 10px
+    }
+
+    .fav-page .fav-live__type-subtitle {
+        font-size: 14px
+    }
+
+    .fav-page .fav-aviator__box {
+        height: auto
+    }
+
+    .fav-page .fav-aviator__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 13px 20px 28px
+    }
+
+    .fav-page .fav-aviator__plane {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: 0;
+        width: 118px
+    }
+
+    .fav-page .fav-aviator__intro {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-top: -1px
+    }
+
+    .fav-page .fav-aviator__logo {
+        width: 145px;
+        margin: auto
+    }
+
+    .fav-page .fav-aviator__subtitle {
+        font-size: 14px;
+        margin-top: 3px
+    }
+
+    .fav-page .fav-aviator__center {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+        order: 3;
+        margin-left: 0;
+        margin-top: 24px
+    }
+
+    .fav-page .fav-aviator__btn {
+        font-size: 14px;
+        padding: 12px 60px 12px
+    }
+
+    .fav-page .fav-aviator__subBtn {
+        font-size: 14px;
+        margin-top: 20px
+    }
+
+    .fav-page .fav-aviator__cloudSecond {
+        top: 0
+    }
+
+    .fav-page .fav-aviator__cloudForth {
+        bottom: 37%
+    }
+
+    .fav-page .fav-application {
+        margin-top: 63px
+    }
+
+    .fav-page .fav-application__title {
+        font-size: 27px;
+        line-height: 32px;
+        width: 72%;
+        margin: auto
+    }
+
+    .fav-page .fav-application__subtitle {
+        margin-top: 7px
+    }
+
+    .fav-page .fav-application__icons {
+        margin-top: 26px
+    }
+
+    .fav-page .fav-application__icon {
+        width: 165px
+    }
+
+    .fav-page .fav-application__icon:first-child {
+        margin-right: 14px
+    }
+
+    .fav-page .fav-application__computer {
+        width: 345px;
+        margin-top: 40px
+    }
+
+    .fav-page .fav-application__computer .comp-mob {
+        display: block
+    }
+
+    .fav-page .fav-application__computer .comp-desk {
+        display: none
+    }
+
+    .fav-page .fav-seo {
+        padding: 18px 16px 103px
+    }
+
+    .fav-page .fav-seo .container-seo {
+        padding: 25px 10px 25px 21px
+    }
+
+    .fav-page .fav-seo__txt {
+        padding: 0 15px 0 0
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .fav-page .fav-sections__wrapper {
+        margin-top: 30px
+    }
+
+    .fav-page .fav-sport__type:nth-of-type(3) {
+        background-image: url(/minio/lobby/main/img/sportsbook-icon-6.png)
+    }
+
+    .fav-page .fav-sport__type:nth-of-type(4) {
+        background-image: url(/minio/lobby/main/img/sportsbook-icon-2.png)
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .fav-page .container,.fav-page .container-seo {
+        max-width: 300px
+    }
+
+    .fav-page .fav-casino__type,.fav-page .fav-live__type,.fav-page .fav-sport__type {
+        width: 146px;
+        height: 146px
+    }
+
+    .fav-page .fav-casino__type-btn,.fav-page .fav-live__type-btn,.fav-page .fav-sport__type-btn {
+        width: 146px
+    }
+
+    .fav-page .fav-casino__mobBtn,.fav-page .fav-live__mobBtn,.fav-page .fav-sport__mobBtn {
+        font-size: 14px;
+        padding: 15px 85px 15px
+    }
+
+    .fav-page .fav-application__title {
+        font-size: 24px;
+        line-height: 26px;
+        width: 77%
+    }
+
+    .fav-page .fav-application__icon {
+        width: 140px
+    }
+
+    .fav-page .fav-application__computer {
+        width: 260px
+    }
+
+    .fav-page .fav-sport__type-name {
+        display: block
+    }
+}
