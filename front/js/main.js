@@ -20,3 +20,18 @@ document.querySelector('.service__btn').addEventListener('click', function () {
     behavior: 'smooth',
   });
 });
+
+//THEME CHANGER
+const body = document.querySelector('body');
+const themeBtn = document.getElementById('theme');
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  body.classList.add(savedTheme);
+}
+
+themeBtn.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  const currentTheme = body.classList.contains('dark') ? 'dark' : '';
+  localStorage.setItem('theme', currentTheme);
+});

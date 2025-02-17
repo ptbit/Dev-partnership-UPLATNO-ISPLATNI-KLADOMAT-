@@ -78,14 +78,10 @@
       width: 310px
       height: 212px
 @media screen and (max-width: 1100px)
-  body.dark
-    .page__bg2
-      background-image: url('../img/bg2-tab-dark.png')
   .page
     &__bg2
       background-image: url('../img/bg2-tab.png')
       height: 900px
-    
   .hero
     &__left
       align-self: start
@@ -455,10 +451,10 @@
       min-width: auto
       max-width: 100%
       min-height: 400px
-      background-size: contain
       inset: 0
       transform: scale(1)
-      background-image: url(../img/about/man-mob.png)
+      background: url('../img/about/man-mob.png') no-repeat 50% 0/contain
+
       &::before
         content: ''
         background: url('../img/about/about-before-tab.png') no-repeat 0 0/cover
@@ -467,7 +463,6 @@
         position: absolute
         top: 15px
         animation: 4s infinite move-roketka ease-in-out
-      
 
     &__list
       transform: scale(1)
