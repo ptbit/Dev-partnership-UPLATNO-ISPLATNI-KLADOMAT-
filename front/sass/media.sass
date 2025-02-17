@@ -444,7 +444,7 @@
         display: none
       &::after
         bottom: -30px
-        animation: 3s infinite move-club linear
+        animation: 7s infinite move-club linear
     &__img
       position: relative
       margin: 0 auto
@@ -562,19 +562,19 @@
         height: 27.469px
     &__img
       min-height: 380px
+      max-width: 450px
       &--gamepad
         bottom: 5px
         left: 10px
         width: 100px
         height: 100px
       &--soccer
-        // right: 70px
         right: 0
         left: 70%
         bottom: 50px
       &--basketball
         top: 0
-        right: 0  
+        right: 40px 
         width: 76px
   .service
     &__title
@@ -620,6 +620,7 @@
 @media screen and (max-width: 430px)
   .about
     &__img
+      max-width: 400px
       min-height: 320px
 @media screen and (max-width: 400px)
   .hero
@@ -636,6 +637,8 @@
   .about
     &__img
       min-height: 300px
+      &--soccer
+        width: 70px
 @media screen and (max-width: 380px)
   .hero
     &__title
@@ -673,6 +676,23 @@
       padding-right: 15px
     &__title
       font-size: 47px
+@media screen and (max-width: 320px)
+  .about
+    &__container
+      &::after
+        width: 100px
+        height: 100px
+        bottom: -10px
+    &__img
+      max-width: 340px
+      &--soccer
+        bottom: 60px
+        width: 60px
+      &--gamepad
+        width: 90px
+        height: 90px
+        left: 20px
+  
 @media screen and (max-width: 312px)
   .types
     &__item
