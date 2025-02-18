@@ -1,5 +1,7 @@
 @media screen and (max-width: 1700px)
   .about
+    &__title 
+      font-size: 85px
     &__container 
       // max-width: 90%
       padding-right: 0
@@ -12,9 +14,7 @@
       &--gamepad
         left: 15%
     &__list
-      width: min-content
       min-width: 400px
-      left: -135px
 
 // @media screen and (max-width: 1600px)
 @media screen and (max-width: 1400px)
@@ -40,12 +40,15 @@
       transform: scale(0.8)
       transform-origin: center
     &__list 
+      left: -135px
       transform: scale(0.8)
       transform-origin: center
 
-//img need be smaller
 @media screen and (max-width: 1250px)
   .about
+    &__title
+      font-size: 70px
+      margin-bottom: 50px
     &__img
       min-width: 800px
       &--gamepad
@@ -350,6 +353,11 @@
       &--right
         background-image: url('../img/service/right-bg-border-tab.png')
         background-size: contain
+    &__text
+      &--right
+        left: 75px
+
+    
   .types
     background-image: url('../img/types/types-bg-tab.png')
     &__title
@@ -584,7 +592,7 @@
     &__left, &__right
       height: 320px
     &__text
-      padding: 0 20px
+      padding: 0 10px
       font-size: 20px
       letter-spacing: 0.4px
       line-height: 22px

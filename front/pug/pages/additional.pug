@@ -1,0 +1,43 @@
+buttons#buttons
+  style.
+    #buttons {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      gap: 5px;
+      z-index: 999;
+    }
+    #theme, #hr, #en {
+      border: 2px dashed grey;
+      background-color: transparent;
+      color: #FF267E;
+      cursor: pointer;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: 0.3s all linear;
+    }
+    #theme:hover, #hr:hover, #en:hover {
+      border: 2px dashed white;
+      background-color: #05C48A;
+      color: #005;
+    }
+    @media screen and (max-width: 380px) {
+      #buttons {
+        right: 0;
+        left: auto;
+        width: min-content;
+        flex-direction: column;
+        padding: 5px;
+        transform: translate(0);
+      }
+      #theme, #hr, #en {
+        padding: 5px 10px;
+        text-align: center;
+      }
+    }
+  button#theme change theme
+  a(href='./index.html')#hr HR
+  a(href='./index-en.html')#en EN
