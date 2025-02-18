@@ -157,7 +157,6 @@ body.light
       position: absolute
       right: 0
       top: 15px
-      animation: 10s infinite rocket-animation-fix
     &::after
       content: ''
       background: url('../img/about/about-after-desk.png') no-repeat 0 0/cover
@@ -174,7 +173,8 @@ body.light
     width: 1020px
     height: 654px
     background: url('../img/about/man-desk.png') no-repeat 50% 0/contain
-    // background-position: right
+    &::before
+      display: none
     &--basketball
       position: absolute
       top: 13.31px
@@ -182,7 +182,6 @@ body.light
       width: 128px
       z-index: -1
       animation: 18s infinite move-basketball linear
-
     &--soccer
       width: 137px
       position: absolute
@@ -196,7 +195,6 @@ body.light
       left: -20px
       top: 6.5px
       animation: 4s infinite move-hand linear
-
     &--gamepad
       width: 195px
       position: absolute
@@ -489,8 +487,3 @@ body.light
     transform: rotate(0deg) translate(0, 0)
   50%
     transform: rotate(10deg) translate(-50px, 0)
-@keyframes rocket-animation-fix
-  0%, 100%
-    transform:  translateX(0, 0)
-  50%
-    transform: translateX(1px)
