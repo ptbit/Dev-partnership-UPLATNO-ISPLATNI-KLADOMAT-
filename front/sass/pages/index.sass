@@ -157,7 +157,7 @@ body.light
       position: absolute
       right: 0
       top: 15px
-      animation: none
+      animation: 10s infinite rocket-animation-fix
     &::after
       content: ''
       background: url('../img/about/about-after-desk.png') no-repeat 0 0/cover
@@ -489,3 +489,8 @@ body.light
     transform: rotate(0deg) translate(0, 0)
   50%
     transform: rotate(10deg) translate(-50px, 0)
+@keyframes rocket-animation-fix
+  0%, 100%
+    transform:  translateX(0, 0)
+  50%
+    transform: translateX(1px)
